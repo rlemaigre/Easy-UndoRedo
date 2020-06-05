@@ -6,10 +6,10 @@ Install via [npm](https://npmjs.com) or [yarn](https://yarnpkg.com)
 
 ```bash
 # Use npm
-npm install vue-undoredo --save
+npm install vue-easy-undoredo --save
 
 # Use yarn
-yarn add vue-undoredo
+yarn add vue-easy-undoredo
 ```
 
 # Demo

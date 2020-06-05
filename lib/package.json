@@ -1,6 +1,6 @@
 {
   "name": "vue-easy-undoredo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A very simple implementation of a typical undo redo stack for VueJS 2",
   "main": "dist/vue-easy-undoredo.esm.js",
   "types": "dist/index.d.ts",
