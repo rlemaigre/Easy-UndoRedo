@@ -46,8 +46,8 @@ The library defines two mixins :
 # UndoRedoStackMixin
  
  An undo redo stack is actually two stacks :
-  * The stack of commands that can be undone (`undoStack` data of the UndoRedoStack mixin)
-  * The stack of commands that can be redone (`redoStack` data of the UndoRedoStack mixin)
+  * The stack of commands that can be undone (`undoStack` data of UndoRedoStackMixin)
+  * The stack of commands that can be redone (`redoStack` data of UndoRedoStackMixin)
    
 ## Methods
  
