@@ -20,7 +20,7 @@ export default class UndoRedoStack extends Vue {
         return this.undoStack[this.undoStack.length - 1].label();
     }
 
-    public undo() {
+    public undo(): void {
         let command = this.undoStack[this.undoStack.length - 1];
         this.undoStack = this.undoStack.slice(0, this.undoStack.length - 1);
         this.redoStack.push(command);
@@ -43,24 +43,24 @@ export default class UndoRedoStack extends Vue {
         }
     }
 
-    public redo() {
+    public redo(): void {
         let command = this.redoStack[this.redoStack.length - 1];
         this.redoStack = this.redoStack.slice(0, this.redoStack.length - 1);
         this.undoStack.push(command);
         command.redo(false);
     }
 
-    public execute(command: Command) {
+    public execute(command: Command): void {
         command.redo(true);
         this.redoStack = [];
         this.undoStack.push(command);
     }
 
-    public markSaved() {
+    public markSaved(): void {
         this.saved = this.undoStack[this.undoStack.length - 1];
     }
 
-    public reset() {
+    public reset(): void {
         this.undoStack = [];
         this.redoStack = [];
         this.saved = null;

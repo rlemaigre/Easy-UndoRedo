@@ -4,7 +4,7 @@
 export interface Command {
 
     /**
-     * Executed when the command is first put on the stack (in that case first = true) or when it must be play
+     * Executed when the command is first put on the stack (in that case first = true) or when it must be played
      * forward (in that case first = false);
      */
     redo(first: boolean): void;
