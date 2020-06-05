@@ -24,15 +24,6 @@
         components: {Tags}
     })
     export default class App extends mixins(UndoRedoStack) {
-
-        undo() {
-            this.undo();
-        }
-
-        redo() {
-            this.redo()
-        }
-
     }
 </script>
 

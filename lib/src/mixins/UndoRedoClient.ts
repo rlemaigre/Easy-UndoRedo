@@ -1,5 +1,4 @@
 import {Component, Vue} from "vue-property-decorator";
-import {Command} from "../ts/Command";
 import UndoRedoStack from "./UndoRedoStack";
 
 /**
@@ -12,7 +11,7 @@ export default class UndoRedoClient extends Vue {
      * The nearest undo redo stack in the ancestor chain or null of none exists.
      */
     get undoRedoStack() {
-        return this.getAncestorWithProperty("isUndoRedoZone") as UndoRedoStack;
+        return this.getAncestorWithProperty("isUndoRedoStack") as UndoRedoStack;
     }
 
     protected getAncestorWithProperty(propertyName: string) {
