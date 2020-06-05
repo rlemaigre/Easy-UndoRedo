@@ -1,14 +1,14 @@
 {
-  "name": "vue-undoredo",
+  "name": "vue-easy-undoredo",
   "version": "0.1.0",
-  "description": "A simple undo redo stack for VueJS 2",
-  "main": "dist/vue-undoredo.esm.js",
+  "description": "A very simple implementation of a typical undo redo stack for VueJS 2",
+  "main": "dist/vue-easy-undoredo.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
     "src"
   ],
-  "module": "./dist/vue-undoredo.esm.js",
+  "module": "./dist/vue-easy-undoredo.esm.js",
   "dependencies": {
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
@@ -24,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rlemaigre/Vue-UndoRedo.git"
+    "url": "git+https://github.com/rlemaigre/Easy-UndoRedo.git"
   },
   "keywords": [
     "vue",
@@ -39,7 +39,7 @@
   "author": "Régis Lemaigre <rlemaigre.github@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rlemaigre/Vue-UndoRedo/issues"
+    "url": "https://github.com/rlemaigre/Easy-UndoRedo/issues"
   },
   "homepage": "https://github.com/rlemaigre/Easy-UndoRedo#readme"
 }

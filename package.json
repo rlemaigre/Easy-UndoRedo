@@ -9,7 +9,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "@mdi/font": "^3.6.95",
-    "vue-undoredo": "file:lib",
+    "vue-easy-undoredo": "file:lib",
     "core-js": "^2.6.5",
     "roboto-fontface": "*",
     "vue": "^2.6.10",
