@@ -30,7 +30,7 @@ The library defines two mixins :
 ## Interfaces
  The library defines one interface : `Command`.
  
-# Command interface
+# Command
  
  A command is an object that can be placed onto an undo redo stack for execution.
  
