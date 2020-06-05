@@ -20,7 +20,7 @@
     import {Component} from "vue-property-decorator";
     import TagModel from "@/ts/Tag";
     import Tag from "@/components/Tag.vue";
-    import UndoRedoClient from "../../lib/src/mixins/UndoRedoClient";
+    import UndoRedoClientMixin from "../../lib/src/mixins/UndoRedoClientMixin";
     import {mixins} from "vue-class-component";
     import AddCommand from "@/ts/commands/AddCommand";
     import RemoveCommand from "@/ts/commands/RemoveCommand";
@@ -28,7 +28,7 @@
     @Component({
         components: {Tag}
     })
-    export default class Tags extends mixins(UndoRedoClient) {
+    export default class Tags extends mixins(UndoRedoClientMixin) {
 
         tags: TagModel[] = [];
         newTag = "";

@@ -1,4 +1,4 @@
-Vue-UndoRedo is a very simple implementation of a typical undo redo stack for VueJS.
+Easy-UndoRedo is a very simple implementation of a typical undo redo stack for VueJS.
 
 # Installation
 
@@ -14,7 +14,7 @@ yarn add vue-easy-undoredo
 
 # Demo
 
-TODO add code sandbox
+https://codesandbox.io/s/easy-undoredo-demo-1t17q
 
 ![demo](img/demo.gif)
 
@@ -24,8 +24,8 @@ TODO add code sandbox
 
 The library defines two mixins :
 
- * `UndoRedoStack` : grafts an undo redo stack on any component that incorporates it
- * `UndoRedoClient` : provides easy access to the nearest component in the ancestor chain with an undo redo stack grafted onto it 
+ * `UndoRedoStackMixin` : grafts an undo redo stack on any component that incorporates it
+ * `UndoRedoClientMixin` : provides easy access to the nearest component in the ancestor chain with an undo redo stack grafted onto it 
  
 ## Interfaces
  The library defines one interface : `Command`.
@@ -43,7 +43,7 @@ The library defines two mixins :
   * `undo(): void` : Executed when the command must be played backward.
   * `label() : string` : Returns the label of the command if any.
  
-# UndoRedoStack mixin
+# UndoRedoStackMixin
  
  An undo redo stack is actually two stacks :
   * The stack of commands that can be undone (`undoStack` data of the UndoRedoStack mixin)
@@ -65,7 +65,7 @@ The library defines two mixins :
  * `redoLabel : string` : the label of the command on top of the `redoStack`
  * `dirty : boolean` : true if the model has unsaved changes given the current state of the stack
  
-# UndoRedoClient mixin
+# UndoRedoClientMixin
  
  Simply provides one computed : `undoRedoStack`. Returns the nearest component in the ancestor chain with an undo redo stack grafted onto it.
  

@@ -5,7 +5,7 @@ import {Command} from "../ts/Command";
  * This mixin grafts an undo redo stack on any component that incorporates it.
  */
 @Component({})
-export default class UndoRedoStack extends Vue {
+export default class UndoRedoStackMixin extends Vue {
 
     isUndoRedoStack = true;
     undoStack: Command[] = [];

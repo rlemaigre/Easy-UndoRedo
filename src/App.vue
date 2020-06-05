@@ -17,13 +17,13 @@
 <script lang="ts">
     import {Component} from "vue-property-decorator";
     import {mixins} from "vue-class-component";
-    import UndoRedoStack from "../lib/src/mixins/UndoRedoStack";
+    import UndoRedoStackMixin from "../lib/src/mixins/UndoRedoStackMixin";
     import Tags from "@/components/Tags.vue";
 
     @Component({
         components: {Tags}
     })
-    export default class App extends mixins(UndoRedoStack) {
+    export default class App extends mixins(UndoRedoStackMixin) {
     }
 </script>
 

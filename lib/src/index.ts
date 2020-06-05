@@ -1,10 +1,10 @@
 import "reflect-metadata";
-import UndoRedoStack from './mixins/UndoRedoStack';
-import UndoRedoClient from './mixins/UndoRedoClient';
+import UndoRedoStackMixin from './mixins/UndoRedoStackMixin';
+import UndoRedoClientMixin from './mixins/UndoRedoClientMixin';
 import {Command} from './ts/Command';
 
 export {
-    UndoRedoStack,
-    UndoRedoClient,
+    UndoRedoStackMixin,
+    UndoRedoClientMixin,
     Command
 }
