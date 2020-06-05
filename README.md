@@ -36,7 +36,7 @@ The library defines two mixins :
  
  Commands simply updates (forward and backward) whatever data model drives the UI. Provided the data model is reactive, Vue will update the UI according to whatever modification the command applied to the model, as it usually does.
  
- ALL modifications of the model must be done by using commands.
+ ALL modifications of the model must be done using commands.
  
  A command must implement three methods :
   * `redo(first: boolean): void` : Executed when the command is put initially onto the stack (in that case first = true) or when it must be played forward (in that case first = false).
